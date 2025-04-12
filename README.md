@@ -1,16 +1,11 @@
 # 🏏  T20_Cricket_Data_analysis-using-web-scraping-Python-and-BI
-This project focuses on analyzing T20 cricket match data using Web Scraping, Python, and Business Intelligence (BI) tools. The goal is to extract meaningful insights from real-world match data by scraping, processing, and visualizing it in an interactive and informative way.
+This project focuses on analyzing T20 cricket match data using Web Scraping, Python, and Business Intelligence (BI) tools. The goal is to extract meaningful insights from real-world match data by scraping, processing, and visualizing it in an interactive and informative way.A complete data pipeline and visualization project designed to analyze T20 cricket player and match performance. This project extracts structured data directly from ESPN Cricinfo using Bright Data’s Web Scraper, cleans it using Python, and presents rich insights in a Power BI dashboard.
 
 # 📌 Project Objectives
-Scrape real-time or historical T20 match data from reliable sources.
-
-Process and clean the data using Python (Pandas, NumPy, etc.).
-
-Perform Exploratory Data Analysis (EDA) to discover key patterns.
-
-Visualize insights using Power BI (or other BI tools).
-
-Share actionable insights such as team performance, player stats, win probability, and more.
+✅ Fully automated web scraping using Bright Data’s Data Collector
+🧹 In-depth data transformation with Python & Pandas
+📈 End-to-end BI pipeline in Power BI with DAX Measures, filters, and parameters
+🔍 Covers individual player analysis, team stats, win patterns, toss insights, venue data & more!
 
 # 🧰 Technologies & Tools Used
 Python 🐍
@@ -30,3 +25,50 @@ ESPNcricinfo
 Cricbuzz
 
 ICC official website (depending on access)
+
+# 🧭 Step-by-Step Workflow
+#🔹 1. Web Scraping with Bright Data
+  📥 We used Bright Data’s Data Collector to scrape structured data from ESPN Cricinfo:
+
+  Player profiles (batting, bowling, career stats)
+
+   Match scorecards
+
+   Team and venue summaries
+
+#📌 Steps:
+
+Create a Bright Data account and choose “Web Scraper – Data Collector”
+
+Target https://www.espncricinfo.com/ as the source
+
+Configure collectors for:
+
+Player stats
+
+Match results
+
+Season summaries
+
+Export structured data as .csv or .json
+
+Store output in the /data/raw/ directory
+
+#🔹 2. Data Cleaning & Transformation (Python 🐍)
+Using Pandas for data wrangling and preprocessing:
+
+📌 Steps:
+
+Open notebooks/cleaning.ipynb
+
+Remove missing/null values
+
+Standardize date formats and player names
+
+Engineer new features:
+
+Win Margin Type
+
+Strike Rate
+
+Bowling Econom
