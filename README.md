@@ -27,7 +27,7 @@ Cricbuzz
 ICC official website (depending on access)
 
 # 🧭 Step-by-Step Workflow
-#🔹 1. Web Scraping with Bright Data
+🔹 1. Web Scraping with Bright Data
   📥 We used Bright Data’s Data Collector to scrape structured data from ESPN Cricinfo:
 
   Player profiles (batting, bowling, career stats)
@@ -36,7 +36,7 @@ ICC official website (depending on access)
 
    Team and venue summaries
 
-#📌 Steps:
+📌 Steps:
 
 Create a Bright Data account and choose “Web Scraper – Data Collector”
 
@@ -54,7 +54,7 @@ Export structured data as .csv or .json
 
 Store output in the /data/raw/ directory
 
-#🔹 2. Data Cleaning & Transformation (Python 🐍)
+🔹 2. Data Cleaning & Transformation (Python 🐍)
 Using Pandas for data wrangling and preprocessing:
 
 📌 Steps:
@@ -71,4 +71,39 @@ Win Margin Type
 
 Strike Rate
 
-Bowling Econom
+Bowling Economy.
+
+🔹 3. Power BI: From Data to Dashboard ⚡
+🧪 Power Query Editor
+Load cleaned_data.csv into Power BI
+
+Further transform columns (e.g., split columns, change data types)
+
+Apply filters for null handling and column renaming
+
+🧠 Data Modeling
+Define relationships between tables: Players, Matches, Teams
+
+Create calendar table for date-based analysis
+
+🔹 4. Dashboard Design ✨
+Design visually rich dashboards with:
+
+🎯 Player Performance Cards (Runs, SR, Avg, Wickets)
+
+📊 Team Comparison Charts
+
+🧩 Toss vs Win Sankey / Donut
+
+🗺️ Venue Heatmap (Win% by location)
+
+📆 Year-on-Year progress graphs
+
+🧮 Interactive filters: Team, Player, Year, Venue
+
+🧠 Future Enhancements
+🧮 Integrate predictive models (match prediction, player performance)
+
+🔄 Schedule scraping jobs via CRON or Airflow
+
+🌐 Convert dashboard into web app using Streamlit
